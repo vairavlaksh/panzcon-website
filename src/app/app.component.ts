@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
+import { PageScrollService } from 'ngx-page-scroll-core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'panzcon-web';
+  active = 1;
+
+  constructor(
+    private pageScrollServ: PageScrollService, 
+    @Inject(DOCUMENT) private document: any
+  ) { }
+
+  onScroll(event: HTMLElement, index: number) {
+    this.pageScrollServ.scroll({
+      scrollTarget: event,
+      document: this.document
+    });
+
+    this.active = index;
+  }
 }
