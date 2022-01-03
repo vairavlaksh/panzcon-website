@@ -1,0 +1,22 @@
+<header class="header">
+  <h1>PANZ CONSULTANTS</h1>
+  <nav>
+    <ul id="nav">
+      <li [ngClass]="{'active-li': activeTabNumber === 1}" (click)="onClickSetActiveTabNumber(1)">
+        <a href="#home">Home</a>
+      </li>
+      <li [ngClass]="{'active-li': activeTabNumber === 2}" (click)="onClickSetActiveTabNumber(2)">
+        <a href="#services">Services</a>
+      </li>
+      <li [ngClass]="{'active-li': activeTabNumber === 3}" (click)="onClickSetActiveTabNumber(3)">
+        <a href="#products">Products</a>
+      </li>
+      <li [ngClass]="{'active-li': activeTabNumber === 4}" (click)="onClickSetActiveTabNumber(4)">
+        <a href="#about-us">About Us</a>
+      </li>
+      <li [ngClass]="{'active-li': activeTabNumber === 5}" (click)="onClickSetActiveTabNumber(5)">
+        <a href="#contact-us">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+</header>
