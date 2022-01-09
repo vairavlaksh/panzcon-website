@@ -1,8 +1,13 @@
+.contact-us {
+  height: 90vh;
+  main {
+    padding-left: 10vh;
+    padding-top: 15vh;
+  }
+}
+
 .contact-us-form {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  min-width: 700px;
   .form-container {
     display: flex;
     flex-direction: column;
@@ -68,27 +73,4 @@
 .section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  footer{
-    background: black;
-    .phone {
-      display: flex;
-      align-items: center;
-      float: left;
-      margin: 10px;
-      padding-left: 3vw;
-    }
-    .email {
-      display: flex;
-      align-items: center;
-      float: right;
-      margin: 10px;
-    }
-
-    span {
-      padding-left: 10px;
-      color: white;
-      font-size: 20px;
-    }
-  }
 }

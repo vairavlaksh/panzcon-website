@@ -5,42 +5,29 @@ $base-color: #FB9634;
   background: white;
   display: flex;
   flex-wrap: wrap;
-  height: auto;
+  height: 5vh;
   justify-content: space-between;
   padding: 1vh 0;
   position: sticky;
   top: 0px;
   z-index: 10;
 }
-h1 {
-  color: #000000;
-  font-size: 23.1609px;
-  font-style: normal;
-  font-weight: 800;
-  height: 28px;
-  left: 50px;
-  line-height: 28px;
-  position: relative;
-}
-nav{
-  height: 25px;
-  line-height: 50px;
-  padding-right: 2vw;
-  ul{
-    display: flex;
-    list-style:none;
-    margin:0 auto;
-    padding:0;
 
+.navbar-brand {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+nav{
+  ul{
     li{
-      border-radius: 9px;
       height: 40px;
-      margin: 0px 5px 0px 5px;
       position: relative;
       text-align: center;
-      top: -5px;
-      width: 134px;
+      width: 10vw;
       a{
+        color: #000000;
         left: 50%;
         position: absolute;
         text-decoration: none;
@@ -52,29 +39,6 @@ nav{
           color: $base-color;
         }
       }
-    }
-  }
-}
-
-.active-li{
-  background: #141E34;
-  border-radius: 9px;
-  color: white;
-  height: 40px;
-  margin: 0px 5px 0px 5px;
-  position: relative;
-  text-align: center;
-  top: -5px;
-  width: 134px;
-
-  a{
-    color: white;
-    left: 50%;
-    top: 60%;
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-    &:hover{
-      color: white !important;
     }
   }
 }
