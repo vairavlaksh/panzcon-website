@@ -1,0 +1,24 @@
+footer{
+  background: black;
+  height: 5vh;
+  position: sticky;
+  .phone {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin: 10px;
+    padding-left: 3vw;
+  }
+  .email {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 10px;
+  }
+
+  span {
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+  }
+}

@@ -1,11 +1,9 @@
-.section{
-  min-height: 60vh;
-}
-
 .about-us {
+  height: 90vh;
   main {
     display: flex;
-    justify-content: space-evenly;
+    padding-left: 10vh;
+    padding-top: 15vh;
     p {
       align-self: center;
       width: 30vw;
