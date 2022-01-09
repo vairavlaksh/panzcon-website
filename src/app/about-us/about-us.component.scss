@@ -1,0 +1,37 @@
+.section{
+  min-height: 60vh;
+}
+
+.about-us {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    p {
+      align-self: center;
+      width: 30vw;
+    }
+    .about-us-img {
+      display: flex;
+      position: relative;
+      img {
+        height: 40vh;
+        width: 40vh;
+      }
+      .circle-top {
+        align-self: flex-end;
+        border: 7px solid #FFFFFF;
+        border-radius: 7vh;
+        height: 10vh;
+        opacity: 0.1;
+        width: 10vh;
+      }
+      .circle-bottom{
+        border: 3px solid #FFFFFF;
+        border-radius: 9vh;
+        height: 15vh;
+        opacity: 0.1;
+        width: 15vh;
+      }
+    }
+  }
+}

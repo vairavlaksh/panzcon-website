@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  color: #000000;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: 28px;
+  }
+
+  body{
+    box-sizing: border-box;
+    margin: 0px;
+  }
+
+  .section{
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+  }
+
+  .section-header {
+    align-items: center;
+    display: flex;
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 48px;
+    padding: 2vh 0 0 10vh;
+    margin: 2vh 0 1vh 0;
+
+    .line-containter-black {
+      background: #000000;
+      border-radius: 30px;
+      height: 5vh;
+      margin-right: 20px;
+      width: 12px;
+    }
+  }
+

@@ -1,60 +1,18 @@
-<div class="main-wrapper">
-  <div class="scroll-block">
-    <div class="step" [ngClass]="{'active': active === 1}" pageScroll
-      (click)="onScroll(panel1, 1)">
-      <div class="round-wrap">
-        <div class="circle"></div>
-      </div>
-    </div>
-    <div class="step" [ngClass]="{'active': active === 2}" pageScroll
-      (click)="onScroll(panel2, 2)">
-      <div class="round-wrap">
-        <div class="circle"></div>
-      </div>
-    </div>
-    <div class="step" [ngClass]="{'active': active === 3}" pageScroll
-      (click)="onScroll(panel3, 3)">
-      <div class="round-wrap">
-        <div class="circle"></div>
-      </div>
-    </div>
-    <div class="step" [ngClass]="{'active': active === 4}" pageScroll
-      (click)="onScroll(panel4, 4)">
-      <div class="round-wrap">
-        <div class="circle"></div>
-      </div>
-    </div>
-    <div class="step" [ngClass]="{'active': active === 5}" pageScroll
-      (click)="onScroll(panel5, 5)">
-      <div class="round-wrap">
-        <div class="circle"></div>
-      </div>
-    </div>
-  </div>
 
-  <div #panel1 class="scroll-card">
-    <div class="card-inner">
-      <h2>Panel 1</h2>
-    </div>
-  </div>
-  <div #panel2 class="scroll-card">
-    <div class="card-inner">
-      <h2>Panel 2</h2>
-    </div>
-  </div>
-  <div #panel3 class="scroll-card">
-    <div class="card-inner">
-      <h2>Panel 3</h2>
-    </div>
-  </div>
-  <div #panel4 class="scroll-card">
-    <div class="card-inner">
-      <h2>Panel 4</h2>
-    </div>
-  </div>
-  <div #panel5 class="scroll-card">
-    <div class="card-inner">
-      <h2>Panel 5</h2>
-    </div>
-  </div>
-</div>
+<app-header [activeTabNumber]="activeTab"></app-header>
+<section id="home">
+  <app-home></app-home>
+</section>
+<section id="services">
+  <app-services></app-services>
+</section>
+<section id="products">
+  <app-products></app-products>
+</section>
+<section id="about-us">
+  <app-about-us></app-about-us>
+</section>
+<section id="contact-us">
+  <app-contact-us></app-contact-us>
+</section>
+
