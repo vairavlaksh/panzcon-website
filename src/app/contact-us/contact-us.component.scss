@@ -3,6 +3,7 @@
   main {
     padding-left: 10vh;
     padding-top: 15vh;
+    justify-content: space-around;
   }
 }
 
@@ -29,7 +30,7 @@
         margin-top: 10px;
         padding-left: 1vw;
         resize: none;
-        width: calc(100% - 1vw);
+        width: 100%;
       }
     }
     .sumbit-btn {
