@@ -12,6 +12,6 @@ background:#FB9634;
 }
 
 .panz-scrollspy {
-  height: 90vh;
+  height: calc(100vh - 120px);
   overflow-y: scroll;
 }

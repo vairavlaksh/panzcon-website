@@ -1,19 +1,11 @@
 footer{
   background: black;
-  height: 5vh;
+  height: 60px;
   position: sticky;
-  .phone {
-    display: flex;
-    align-items: center;
-    float: left;
-    margin: 10px;
-    padding-left: 3vw;
-  }
   .email {
     display: flex;
     align-items: center;
-    float: right;
-    margin: 10px;
+    padding: 10px;
   }
 
   span {

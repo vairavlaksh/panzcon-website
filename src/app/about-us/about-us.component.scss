@@ -4,31 +4,15 @@
     display: flex;
     padding-left: 10vh;
     padding-top: 15vh;
+    justify-content: space-around;
     p {
       align-self: center;
       width: 30vw;
     }
     .about-us-img {
-      display: flex;
-      position: relative;
       img {
-        height: 40vh;
-        width: 40vh;
-      }
-      .circle-top {
-        align-self: flex-end;
-        border: 7px solid #FFFFFF;
-        border-radius: 7vh;
-        height: 10vh;
-        opacity: 0.1;
-        width: 10vh;
-      }
-      .circle-bottom{
-        border: 3px solid #FFFFFF;
-        border-radius: 9vh;
-        height: 15vh;
-        opacity: 0.1;
-        width: 15vh;
+        max-height: 720px;
+        max-width: 574px;
       }
     }
   }
