@@ -12,9 +12,10 @@ $base-color: #FB9634;
   flex-direction: column;
 
   h1 {
-    max-width: 32vw;
-    line-height: 50px;
-    font-weight: 600;
+    max-width: 36vw;
+    line-height: 6vw;
+    font-weight: bold;
+    font-size: 45px;
   }
 
   .big-circle {
@@ -34,13 +35,13 @@ $base-color: #FB9634;
 
 .view-products {
   background-color: $base-color;
-  border-radius: 9px;
-  height: 40px;
-  margin: 0px 5px 0px 5px;
+  border-radius: 10px;
+  height: 12vh;
+  margin: 24px 5px 0px 5px;
   text-align: center;
   top: -5px;
   position: relative;
-  width: 134px;
+  width: 12vw;
   a {
     color: black;
     position: absolute;
@@ -49,6 +50,8 @@ $base-color: #FB9634;
     width: 100%;
     transform: translateX(-50%) translateY(-50%);
     text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 

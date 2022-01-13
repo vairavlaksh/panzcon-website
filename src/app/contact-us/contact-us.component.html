@@ -5,18 +5,20 @@
   </h1>
   <main class="contact-us-form">
     <div class="form-container">
-      <div class="input-containter">
-        <label for="email-id">Email ID</label><br>
-        <input [(ngModel)]="contactUs.email" class="border" id="email-id" placeholder="email@domain.com" type="text">
-      </div>
-      <div class="text-area-container">
-        <label for="text-area">Your Message</label><br>
-        <textarea [(ngModel)]="contactUs.msg" class="border" id="text-area" placeholder="Enter your message here">
-        </textarea>
-      </div>
-      <div class="sumbit-btn">
-        <button type="button" (click)="submitFormData()">Submit</button>
-      </div>
+      <form [formGroup]="enquiryForm" (ngSubmit)="submitFormData()">
+        <div class="input-containter">
+          <label for="email-id">Email ID</label><br>
+          <input class="border" id="email-id" placeholder="email@domain.com" type="text" formControlName="email" >
+        </div>
+        <div class="text-area-container">
+          <label for="text-area">Your Message</label><br>
+          <textarea class="border" id="text-area" placeholder="Enter your message here" formControlName="message">
+          </textarea>
+        </div>
+        <div class="sumbit-btn">
+          <button type="submit" [disabled]="!enquiryForm.valid">Submit</button>
+        </div>
+      </form>
     </div>
     <div class="img-containter">
       <img src="./../../assets/tv.png" alt="contact us"/>
