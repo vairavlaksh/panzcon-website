@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 * {
   color: #000000;
-  font-family: Roboto, sans-serif;
+  font-family: open-sans, sans-serif;
   font-style: normal;
   line-height: 28px;
   }
@@ -16,7 +16,7 @@
   .section-header {
     align-items: center;
     display: flex;
-    font-size: 5vh;
+    font-size: 30px;
     font-style: normal;
     font-weight: bold;
     line-height: 48px;
@@ -26,7 +26,7 @@
     .line-containter-black {
       background: #000000;
       border-radius: 30px;
-      height: 5vh;
+      height: 30px;
       margin-right: 20px;
       width: 12px;
     }

@@ -1,9 +1,6 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
-interface contactUs {
-  email: string,
-  msg: string
-}
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-us',
@@ -11,22 +8,30 @@ interface contactUs {
   styleUrls: ['./contact-us.component.scss']
 })
 
-export class ContactUsComponent implements OnInit {
+export class ContactUsComponent {
 
-  contactUs: contactUs;
+  enquiryForm = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    message: new FormControl('')
+  });
+  formSubmitSuccess = false;
 
-  constructor() {
-    this.contactUs = {
-      email: '',
-      msg: ''
-    }
-   }
 
-  ngOnInit(): void {
-  }
+  constructor(private http: HttpClient) {}
+
 
   submitFormData() {
-    console.log(this.contactUs);
+    const enquiryData = this.enquiryForm.value;
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    this.http.post(
+      'https://formspree.io/f/mvolzgbr',
+      { replyto: enquiryData.email, message: enquiryData.message },
+      {headers: headers}
+    ).subscribe(
+      response => {
+        this.formSubmitSuccess = true;
+      }
+    );
   }
 
 }
