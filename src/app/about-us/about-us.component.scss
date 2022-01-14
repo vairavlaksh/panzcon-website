@@ -1,19 +1,10 @@
-.about-us {
-  height: 90vh;
-  main {
-    display: flex;
-    padding-left: 10vh;
-    padding-top: 15vh;
-    justify-content: space-around;
-    p {
-      align-self: center;
-      width: 30vw;
-    }
-    .about-us-img {
-      img {
-        max-height: 720px;
-        max-width: 574px;
-      }
-    }
+.about-us-img {
+  img {
+    width: 150%;
   }
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
 }

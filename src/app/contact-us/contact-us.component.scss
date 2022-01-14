@@ -1,85 +1,20 @@
-.contact-us {
-  height: 90vh;
-  main {
-    padding-left: 10vh;
-    justify-content: space-around;
-  }
+$base-color: #FB9634;
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.contact-us-form {
-  display: flex;
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    .input-containter {
-      margin: 20px 0;
-      min-width: 600px;
-      label {
-        font-size: 20px;
-      }
-      input {
-        min-height: 30px;
-        height: 12vh;
-        margin: 10px 0;
-        padding-left: 1vw;
-        width: calc(100% - 1vw);
-      }
-    }
-    .text-area-container {
-      min-width: 600px;
-      textarea {
-        min-height: 150px;
-        margin-top: 10px;
-        padding-left: 1vw;
-        resize: none;
-        width: 100%;
-      }
-    }
-    .sumbit-btn {
-      margin-top: 4vh;
-      button {
-        width: 12vw;
-        height: 12vh;
-        background: #FB9634;
-        border-radius: 10px;
-        border: none;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-      }
-      button:disabled {
-        background-color: #CCC;
-        color: #666;
-      }
-    }
-
-
-    label{
-      padding: 10px 0;
-    }
-
-    .border {
-      background: #F2F3FE;
-      border: none;
-      border-radius: 10px;
-    }
-  }
-  .img-containter{
-    width: 40vw;
-    text-align: center;
-
-    .circle{
-      background: #FE5354;
-      border-radius: 9vh;
-      height: 5vh;
-      position: relative;
-      left: 10vw;
-      width: 5vh;
-    }
-  }
+button {
+  background-color: $base-color;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
+.mat-form-field {
+  display: block;
+  max-width: 80vh;
+}
+
+img {
+  width: 60vh;
+  height: 40vh;
 }

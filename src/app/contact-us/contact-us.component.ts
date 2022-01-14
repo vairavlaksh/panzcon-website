@@ -1,6 +1,14 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
+
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+      const isSubmitted = form && form.submitted;
+      return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 
 @Component({
   selector: 'app-contact-us',
@@ -16,12 +24,14 @@ export class ContactUsComponent {
   });
   formSubmitSuccess = false;
 
+  matcher = new MyErrorStateMatcher();
+
 
   constructor(private http: HttpClient) {}
 
-
   submitFormData() {
     const enquiryData = this.enquiryForm.value;
+    console.log('data', enquiryData);
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     this.http.post(
       'https://formspree.io/f/mvolzgbr',
@@ -33,5 +43,7 @@ export class ContactUsComponent {
       }
     );
   }
+
+  get email() { return this.enquiryForm.get('email'); }
 
 }

@@ -1,34 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-  color: #000000;
-  font-family: open-sans, sans-serif;
+  color: #000;
   font-style: normal;
-  line-height: 28px;
-  }
+  line-height: 1.8em;
+}
 
-  body{
-    position: relative;
-    box-sizing: border-box;
-    margin: 0px;
-    height: 100vh;
-  }
+html, body {
+  height: 100%;
+}
 
-  .section-header {
-    align-items: center;
-    display: flex;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 48px;
-    padding: 2vh 0 0 10vh;
-    margin: 2vh 0 1vh 0;
+body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-    .line-containter-black {
-      background: #000000;
-      border-radius: 30px;
-      height: 30px;
-      margin-right: 20px;
-      width: 12px;
-    }
-  }
+.line-container-black {
+  background: #000;
+  border-radius: 30px;
+  height: 30px;
+  margin-right: 20px;
+  width: 12px;
+}
 
+.line-container-orange {
+  background: #FB9634;
+  border-radius: 30px;
+  height: 30px;
+  margin-right: 20px;
+  width: 12px;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.section {
+  margin-top: 6%;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+h1, h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
