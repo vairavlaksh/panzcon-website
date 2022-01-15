@@ -22,3 +22,11 @@ a {
   font-weight: bold;
   border-color: $base-color !important;
 }
+
+@media (max-width: 767.98px) {
+  .sm-background {
+    background-image: url("./../../assets/logoXsSm.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+}
