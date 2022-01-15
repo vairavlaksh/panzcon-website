@@ -1,3 +1,5 @@
+$base-color: #FB9634;
+
 h1 {
   font-size: 2em;
   font-weight: bold;
@@ -5,12 +7,6 @@ h1 {
 
 .product-images {
   height: 20vh;
-}
-
-.mat-card {
-  min-height: 50vh !important;
-  max-height: 50vh !important;
-  overflow-y: hidden;
 }
 
 .logo-card {
@@ -21,4 +17,18 @@ h1 {
 
 p {
   line-height: 1.4em;
+}
+
+@media (min-width: 768.02px) {
+  .mat-card {
+    min-height: 50vh !important;
+    max-height: 50vh !important;
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mat-card {
+    border: 0.1em solid $base-color;
+  }
 }

@@ -1,29 +1,35 @@
-<header class="container">
-  <div class="row">
-    <div class="col-md-2">
-      <a class="nav-link" href="#home">
-        <img src="./../../assets/logo.png">
-      </a>
-      <input type="checkbox" id="show-menu">
-      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+<div class="header-section">
+  <header class="container">
+    <div class="row">
+      <div class="col-6 col-md-2">
+        <a class="d-none d-md-block nav-link" href="#home">
+          <img src="./../../assets/logo.png">
+        </a>
+        <a class="d-block d-md-none nav-link" href="#home">
+          <img src="./../../assets/logoXS.png">
+        </a>
+      </div>
+      <div class="col-md-10 d-none d-md-block d-md-flex justify-content-end">
+        <nav id="panz-navbar" class="navbar navbar-light px-3">
+          <ul id="nav" class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-6 d-flex justify-content-end align-items-center d-md-none">
+        <a class="nav-link" href="#contact-us">CONTACT US</a>
+      </div>
     </div>
-    <div class="col-md-10 d-md-flex justify-content-end">
-      <nav id="panz-navbar" class="navbar navbar-light px-3">
-        <ul id="nav" class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#products">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-us">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-us">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+  </header>
+</div>

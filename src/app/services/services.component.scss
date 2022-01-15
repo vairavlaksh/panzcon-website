@@ -9,3 +9,9 @@ p {
   font-size: 1.2em;
   font-weight: normal;
 }
+
+@media (max-width: 767.98px) {
+  h2 {
+    text-align: center;
+  }
+}
