@@ -6,7 +6,7 @@ h1 {
 }
 
 .product-images {
-  height: 20vh;
+  height: 15vh;
 }
 
 .logo-card {
@@ -21,8 +21,8 @@ p {
 
 @media (min-width: 768.02px) {
   .mat-card {
-    min-height: 50vh !important;
-    max-height: 50vh !important;
+    min-height: 55vh !important;
+    max-height: 55vh !important;
     overflow-y: hidden;
   }
 }

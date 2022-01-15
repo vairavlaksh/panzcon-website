@@ -11,7 +11,11 @@ background:#FB9634;
   background:#FB9634;
 }
 
+.container-fluid {
+  height: 100vh;
+}
+
 .panz-scrollspy {
-  height: calc(100vh - 120px);
+  height: 80vh;
   overflow-y: scroll;
 }
