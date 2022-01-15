@@ -1,28 +1,38 @@
-<div class="section contact-us">
-  <h1 class="section-header">
-    <div class="line-containter-black"></div>
-    Contact Us
-  </h1>
-  <main class="contact-us-form">
-    <div class="form-container">
-      <form [formGroup]="enquiryForm" (ngSubmit)="submitFormData()">
-        <div class="input-containter">
-          <label for="email-id">Email ID</label><br>
-          <input class="border" id="email-id" placeholder="email@domain.com" type="text" formControlName="email" >
-        </div>
-        <div class="text-area-container">
-          <label for="text-area">Your Message</label><br>
-          <textarea class="border" id="text-area" placeholder="Enter your message here" formControlName="message">
-          </textarea>
-        </div>
-        <div class="sumbit-btn">
-          <button type="submit" [disabled]="!enquiryForm.valid">Submit</button>
-        </div>
-      </form>
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1 class="d-md-flex pt-md-5 align-items-md-center">
+          <div class="line-container-orange"></div>
+          Contact Us
+        </h1>
+        <main>
+          <div class="form-container pt-md-5">
+            <form [formGroup]="enquiryForm">
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email" [errorStateMatcher]="matcher" placeholder="email@domain.com" />
+                <mat-error *ngIf="email?.errors?.['email'] && !email?.errors?.['required']">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="email?.errors?.['required']">
+                  Email is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Your Message</mat-label>
+                <textarea matInput placeholder="Enter your message here" formControlName="message"></textarea>
+              </mat-form-field>
+            </form>
+          </div>
+          <button class="my-md-4" mat-raised-button type="submit" [disabled]="!enquiryForm.valid" (click)="submitFormData()">
+            Submit
+          </button>
+        </main>
+      </div>
+      <div class="col-md-5 d-md-flex align-self-center pt-md-5">
+        <img src="./../../assets/tv.png" alt="contact us"/>
+      </div>
     </div>
-    <div class="img-containter">
-      <img src="./../../assets/tv.png" alt="contact us"/>
-      <div class="circle"></div>
-    </div>
-  </main>
+  </div>
 </div>
