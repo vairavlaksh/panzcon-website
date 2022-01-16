@@ -34,7 +34,7 @@ export class ContactUsComponent {
     console.log('data', enquiryData);
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     this.http.post(
-      'https://formspree.io/f/mvolzgbr',
+      'https://formspree.io/f/xlezgjke',
       { replyto: enquiryData.email, message: enquiryData.message },
       {headers: headers}
     ).subscribe(
